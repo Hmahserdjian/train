@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="3"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <link rel="stylesheet" type="text/css" href="assets/style.css">
@@ -12,7 +13,7 @@
 <body>
     <div class="container">
         
-        <div class="jumbotron">
+        <div class="jumbotron" style="background-color: black; color: firebrick">
             <div class="container">
                 <h1>Where is your train?</h1>
                 <p>The train arrives when the train arrives!</p>
@@ -20,34 +21,39 @@
         </div>
         
     
-    <table class="table table-hover">
+    <table class="table table-hover" >
         <thead>
-            <tr>
-                <th>What time is your train coming?</th>
+                <th style="background-color: blue; color: darkorange">What time is your train coming?</th>
             </tr>
         </thead>
-        <tbody>
+        <tbody id="tBody">
             <tr>
                 <td>Train Name:</td>
                 <td>Destination:</td>
                 <td>Frequency (min):</td>
-                <td>Arrives</td>
+                <td>Arrives:</td>
                 <td>minutes away:</td>
             </tr>
         </tbody>
     </table>
     
     <form action="" method="POST" role="form">
-        <legend>My travel</legend>
+        <legend style="background-color: blue; color: darkorange">My travel</legend>
     
-        <div class="form-group">
+        <div class="form-group" >
             <label for="">Train Name:</label>
-            <input type="text" class="form-control" id="" placeholder="Input field">
+            <input type="text" class="form-control" id="trainName" placeholder="Train Name">
+            <label for="">Destination:</label>
+            <input type="text" class="form-control" id="dEstination" placeholder="Destination">
+            <label for="">First train time:</label>
+            <input type="text" class="form-control" id="firstTraintime" placeholder="First train time">
+            <label for="">Frequency:</label>
+            <input type="text" class="form-control" id="fRequency" placeholder="Frequency">
+            <label for="">Minutes away:</label>
+            <input type="text" class="form-control" id="minutesAway" placeholder="Frequency">
         </div>
-    
-        
-    
-        <button type="submit" class="btn btn-primary">Submit</button>
+
+        <button type="submit" id="train-time" class="btn btn-primary">Submit</button>
     </form>
     
     

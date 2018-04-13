@@ -1,3 +1,9 @@
 h1 {
     color: green;
 };
+
+form {
+    float: right;
+    width: 30%;
+    padding: 20px;
+}
